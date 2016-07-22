@@ -1,0 +1,61 @@
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}
+
+#container {
+    width: 960px;
+    margin: 30px auto;
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+a {
+    color:black;
+}
+
+a:hover {
+    color:green;
+}
+
+blockquote {
+    display: block;
+    padding-left: 20px;
+    border-left: 3px solid #df0d32;
+}
+
+.editable {
+    outline: none;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid purple;
+}
+
+
+section {
+    width: 960px;
+    margin: 30px auto;
+}
+
+
+
+blockquote {
+    border-left: 5px solid #555;
+    margin-left: -15px;
+    padding-left: 15px;
+    font-style: italic;
+    color: #555;
+}

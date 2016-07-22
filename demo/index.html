@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="demo">
+<head>
+    <meta charset="UTF-8">
+    <title>angularjs medium editor | demo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="../bower_components/medium-editor/dist/css/medium-editor.css">
+    <link rel="stylesheet" href="../bower_components/medium-editor/dist/css/themes/default.css">
+    <style>
+    </style>
+</head>
+<body>
+    <section ng-controller="demo">
+        <h1>Medium Editor + Insert Plugin for AngularJS</h1>
+        <h4>Type Here: <button type="button" ng-click="text=''">Clear</button></h4>
+        <form name="demo">
+            <div name="text" ng-model="text" medium-editor bind-options="{'toolbar': {'buttons': ['bold', 'italic', 'underline', 'header1', 'header2', 'quote', 'orderedlist', 'unorderedlist']}}">
+                <div medium-insert insert-addons="insertAddons"></div>
+            </div>
+        </form>
+        <h4>Model:</h4>
+        <pre>{{text}}</pre>
+    </section>
+
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/medium-editor/dist/js/medium-editor.js"></script>
+    <script src="../bower_components/angular-medium-editor/dist/angular-medium-editor.js"></script>
+    <script src="../dist/angular-medium-editor-insert-plugin.js"></script>
+
+    <!-- Medium Editor Insert Plugin Dependencies-->
+    <!-- Font Awesome for awesome icons. You can redefine icons used in a plugin configuration -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../bower_components/medium-editor/dist/css/medium-editor.min.css">
+    <link rel="stylesheet" href="../bower_components/medium-editor/dist/css/themes/default.css">
+    <link rel="stylesheet" href="../bower_components/medium-editor-insert-plugin/dist/css/medium-editor-insert-plugin.min.css">
+
+    <!-- JS -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/medium-editor/dist/js/medium-editor.js"></script>
+    <script src="../bower_components/handlebars/handlebars.runtime.min.js"></script>
+    <script src="../bower_components/jquery-sortable/source/js/jquery-sortable-min.js"></script>
+    <script src="../bower_components/blueimp-file-upload/js/vendor/jquery.ui.widget.js"></script>
+    <script src="../bower_components/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
+    <script src="../bower_components/blueimp-file-upload/js/jquery.fileupload.js"></script>
+    <script src="../bower_components/medium-editor-insert-plugin/dist/js/medium-editor-insert-plugin.min.js"></script>
+
+    <script>
+      angular.module('demo', ['angular-medium-editor', 'angular-medium-editor-insert-plugin'])
+        .controller('demo', demo);
+        demo.$inject = ['$scope'];
+
+        function demo($scope) {
+            $scope.text = 'This text gets is shown via .$render()';
+            $scope.insertAddons = { 
+                "images": {
+                    "fileUploadOptions": {
+                        "url": "new-upload.php" }
+                    }
+                }
+        }
+    </script>
+</body>
+</html>
+
+
+

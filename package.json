@@ -1,6 +1,6 @@
 {
   "name": "angular-medium-editor-insert-plugin",
-  "version": "0.1.10",
+  "version": "0.1.14",
   "description": "AngularJS implementation of medium-editor-insert-plugin, an extension of medium-editor and angular-medium-editor",
   "main": "index.js",
   "scripts": {
@@ -33,6 +33,12 @@
     "grunt-sass": "^1.2.0",
     "load-grunt-tasks": "^2.0.0"
   },
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "bugs": {
     "url": "https://github.com/himynameistimli/angular-medium-editor-insert-plugin/issues"
   },

@@ -13,7 +13,10 @@
         return directive;
 
         function linkFunction(scope, elem, attr, ngModel) {
-            $('[medium-editor]').mediumInsert({
+
+            var editor = $('medium-editor').length ? $('medium-editor') : $('[medium-editor]');
+
+            editor.mediumInsert({
                 editor: ngModel.editor,
                 addons: scope.insertAddons,
             })

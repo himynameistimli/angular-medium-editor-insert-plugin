@@ -1,8 +1,8 @@
-# Insert Plugin for Angular Medium Editor
-This is an AngularJS directive combines all of the follpwing
-[Medium Editor](https://github.com/yabwe/medium-editor) by Davi Ferreira
-[Medium Editor Insert Plugin](https://github.com/orthes/medium-editor-insert-plugin) by Pavel Linkesch
-[Angular Medium Editor](https://github.com/thijsw/angular-medium-editor) by Thijs Wijnmaalen
+# Insert Plugin for Angular Medium Editor  
+This is an AngularJS directive combines all of the following  
+[Medium Editor](https://github.com/yabwe/medium-editor) by Davi Ferreira  
+[Medium Editor Insert Plugin](https://github.com/orthes/medium-editor-insert-plugin) by Pavel Linkesch  
+[Angular Medium Editor](https://github.com/thijsw/angular-medium-editor) by Thijs Wijnmaalen  
 
 
 ## Install

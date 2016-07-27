@@ -1,6 +1,6 @@
 {
   "name": "angular-medium-editor-insert-plugin",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "AngularJS implementation of medium-editor-insert-plugin, an extension of medium-editor and angular-medium-editor",
   "main": "index.js",
   "scripts": {
